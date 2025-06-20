@@ -17,7 +17,11 @@ export default defineConfig({
     assetsInlineLimit: 1024,
   },
   server: {
+    host: true,
     port: 7777,
+    cors: true,
+    strictPort: true,
+    allowedHosts: ['.ngrok-free.app'],
   },
   plugins: [
     mdx({

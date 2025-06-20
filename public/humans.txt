@@ -1,25 +1,17 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
 
-The humans.txt file explains the team, technology,
-and graphic assets behind this site humanstxt.org.
-
+The humans.txt file explains dev tools and technology
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
-
-Hamish Williams
-Hand crafted design & web development
+DEVELOPER | デザイナー
+Edwin Mwiti
+Web development
 
 Design tools:
 Figma
-Photoshop
-Blender
+Canva
 
-twitter.com/hamishmw
-github.com/hamishmw
+instagram.com/i.amwitii
+github.com/Mwit1
 
 _______________________________________________________________________________
 

@@ -1,26 +1,11 @@
-import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
-import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
-import sliceAnnotation from '~/assets/slice-annotation.png';
 import sliceAppLarge from '~/assets/slice-app-large.jpg';
 import sliceAppPlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceApp from '~/assets/slice-app.jpg';
-import sliceBackgroundBarLarge from '~/assets/slice-background-bar-large.jpg';
-import sliceBackgroundBarPlaceholder from '~/assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from '~/assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from '~/assets/slice-background-large.jpg';
 import sliceBackgroundPlaceholder from '~/assets/slice-background-placeholder.jpg';
-import sliceBackground from '~/assets/slice-background.jpg';
-import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
-import sliceIrl from '~/assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from '~/assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from '~/assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from '~/assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from '~/assets/slice-sidebar-layers-large.png';
-import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
-import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import beach from '~/assets/beach.jpg';
+import gallery from '~/assets/gallery.jpg';
+import booking from '~/assets/booking.jpg';
+import landingpage from '~/assets/landingpage.jpg';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -40,10 +25,10 @@ import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import styles from './slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Hotel Dashboard and Booking System';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+  'This project involved  wide range of technical, creative, and UX skills..';
+const roles = ['Frontend Development', 'UX Design', 'Booking Functionality'];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -54,8 +39,8 @@ export const Slice = () => {
     <Fragment>
       <ProjectContainer className={styles.slice}>
         <ProjectBackground
-          src={sliceBackground}
-          srcSet={`${sliceBackground} 1280w, ${sliceBackgroundLarge} 2560w`}
+          src={beach}
+          srcSet={`${beach} 1280w, ${beach} 2560w`}
           width={1280}
           height={800}
           placeholder={sliceBackgroundPlaceholder}
@@ -64,7 +49,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          url="#"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -74,7 +59,7 @@ export const Slice = () => {
               width={800}
               height={500}
               placeholder={sliceAppPlaceholder}
-              alt="The Slice web application showing a selected user annotation."
+              alt="hotel"
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
@@ -82,97 +67,61 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionColumns centered className={styles.columns}>
             <div className={styles.imagesText}>
-              <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
+              <ProjectSectionHeading>Landing Page</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                The landing page serves as the first impression of the hotel. It’s designed to immediately engage visitors, communicate the brand’s essence, and guide users toward booking a stay.
               </ProjectSectionText>
               <ProjectSectionText>
                 Our solution was to allow users to be invited to a layer, where they can
                 see others’ annotations and make their own.
               </ProjectSectionText>
             </div>
-            <div className={styles.sidebarImages}>
-              <Image
-                className={styles.sidebarImage}
-                srcSet={`${sliceSidebarLayers} 350w, ${sliceSidebarLayersLarge} 700w`}
-                width={350}
-                height={750}
-                placeholder={sliceSidebarLayersPlaceholder}
-                alt="The layers sidebar design, now with user profiles."
-                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              />
-              <Image
-                className={styles.sidebarImage}
-                srcSet={`${sliceSidebarAnnotations} 350w, ${sliceSidebarAnnotationsLarge} 700w`}
-                width={350}
-                height={750}
-                placeholder={sliceSidebarAnnotationsPlaceholder}
-                alt="Multiple user annotations on a shared layer."
-                sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              />
-            </div>
+            <Image
+              src={landingpage}
+              width={940}
+              height={500}
+              placeholder={landingpage}
+              alt="Landingpage"
+            />
           </ProjectSectionColumns>
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>Gallery</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                Guests are more likely to book if they can see real photos of the rooms,
+                 pool, restaurant, beach, or views. It reassures them that the hotel is clean, beautiful, and worth the price.
+                 A well-organized gallery with clear navigation (sliders or grid layout) 
+                 keeps users engaged longer and helps them imagine themselves at the hotel.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
-              srcSet={`${sliceSlides} 800w, ${sliceSlidesLarge} 1920w`}
+              srcSet={`${gallery} 800w, ${gallery} 1920w`}
               width={800}
               height={500}
-              placeholder={sliceSlidesPlaceholder}
-              alt="The new My Slides tab in slice, showing annotated and favorited slides."
+              placeholder={gallery}
+              alt="gallery"
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection padding="top">
           <ProjectSectionContent className={styles.grid}>
-            <div className={styles.gridImage}>
-              <div className={styles.gridBackground}>
-                <Image
-                  srcSet={`${sliceBackgroundBar} 440w, ${sliceBackgroundBarLarge} 880w`}
-                  width={440}
-                  height={790}
-                  placeholder={sliceBackgroundBarPlaceholder}
-                  alt=""
-                  role="presentation"
-                  sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
-                />
-              </div>
-              <div className={styles.gridForeground}>
-                <Image
-                  srcSet={`${sliceAnnotation} 440w, ${sliceAnnotationLarge} 880w`}
-                  width={440}
-                  height={340}
-                  placeholder={sliceAnnotationPlaceholder}
-                  alt="An annotation preview popover with statistics for shape perimeter and area."
-                  sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
-                />
-              </div>
-            </div>
+             <Image
+              srcSet={`${booking} 800w, ${booking} 1920w`}
+              width={800}
+              height={500}
+              placeholder={booking}
+              alt="booking"
+              sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
+            />
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>Bookings</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
-              </ProjectSectionText>
+               The booking section is the main conversion point — it turns interest into action by letting users reserve rooms instantly without leaving the site.
+               By allowing bookings directly through the website, the hotel avoids paying commission to third-party platforms like Booking.com or Airbnb.
+                A clean, functional booking section makes the website look more legitimate and trustworthy, encouraging guests to proceed with confidence.              </ProjectSectionText>
             </div>
           </ProjectSectionContent>
         </ProjectSection>
@@ -181,20 +130,27 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                1. Modern & Responsive Hotel Website ---
+                Delivered a clean, mobile-first design optimized for user experience across all devices.
+
+                2. Fully Functional Booking System
+                Enabled guests to book rooms directly through the website — increasing convenience and boosting direct bookings.
+
+                3. Improved Online Presence
+                The new site significantly enhanced the hotel’s brand image, making it more appealing and competitive online.
+
+                4. Increased Guest Engagement
+                Engaging visuals, a gallery section, and clear calls-to-action kept users on the site longer and encouraged bookings.
+
+                5. Professional Email Integration
+                Booking confirmations are now sent directly to the hotel’s official email, improving communication and operations.  
+
+                6. Optimized for Speed & SEO
+                Fast load times and proper meta tags helped improve search visibility and user retention.
+
               </ProjectSectionText>
             </ProjectTextRow>
-            <Image
-              src={sliceIrl}
-              width={940}
-              height={500}
-              placeholder={sliceIrlPlaceholder}
-              alt="Students at the University of New South Wales using the new collaborative annotation features"
-            />
+            
           </ProjectSectionContent>
         </ProjectSection>
       </ProjectContainer>

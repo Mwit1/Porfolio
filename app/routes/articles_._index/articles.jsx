@@ -86,7 +86,7 @@ function ArticlesPost({ slug, frontmatter, timecode, index }) {
       </RouterLink>
       {featured && (
         <Text aria-hidden className={styles.postTag} size="s">
-          477
+          7069
         </Text>
       )}
     </article>
