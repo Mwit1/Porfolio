@@ -101,7 +101,7 @@ export const Home = () => {
         title="Code Playground & App Demos"
         description="Explore some of my recent 'mini projects'. The Link is currently under repair!!"
         buttonText="View projects"
-        buttonLink="#" //"/projects/smart-sparrow"
+        buttonLink="#" ///projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Project Links',

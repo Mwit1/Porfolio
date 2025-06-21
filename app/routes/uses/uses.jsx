@@ -35,7 +35,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -47,8 +47,7 @@ export const Uses = () => {
                     <Link href="https://www.figma.com">Figma</Link> is my primary tool for
                     UI design these days. Made the switch from Sketch in 2020 and haven’t
                     looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    <Link href="#">a few plugins</Link>
                   </ListItem>
                   <ListItem>
                     Any motion graphics I create are created in Adobe After Effects. So
@@ -126,15 +125,15 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Operating system</TableHeadCell>
-                    <TableCell>Arch Linux (by the way)</TableCell>
+                    <TableCell>Windows 11</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Browser</TableHeadCell>
-                    <TableCell>Zen Browser</TableCell>
+                    <TableCell>Chrome Browser</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
+                    <TableCell>1080p Samsung</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
@@ -150,7 +149,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
+                    <TableCell>Apple Airpods</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Microphone</TableHeadCell>
