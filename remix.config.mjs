@@ -1,16 +1,17 @@
-/**
- * @type {import('@remix-run/dev').AppConfig}
- */
-module.exports = {
+// remix.config.mjs
+
+/** @type {import('@remix-run/dev').AppConfig} */
+export default {
   appDirectory: "app",
   assetsBuildDirectory: "public/build",
   publicPath: "/build/",
   serverBuildDirectory: "build/index.js",
   devServerPort: 8002,
 
-  // ✅ This is critical for Cloudflare Pages
+  // ✅ Required for deploying to Cloudflare Pages
   output: "static",
 
+  // ✅ Opting into upcoming Remix v3 behavior
   future: {
     v3_fetcherPersist: true,
     v3_lazyRouteDiscovery: true,

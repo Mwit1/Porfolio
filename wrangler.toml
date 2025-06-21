@@ -1,19 +1,5 @@
 name = "portfolio"
 compatibility_date = "2024-06-21"
 
-[build]
-command = "npm run build"
-
 [site]
 bucket = "./build/client"
-entry-point = "./"
-functions = "./functions"
-
-[[kv_namespaces]]
-binding = "MY_KV"
-id = "647fad46d29f4d66b35b3c3fb3d3cfba"
-
-[env.production]
-[[env.production.kv_namespaces]]
-binding = "MY_KV"
-id = "2ec509ca69ad4b1bbfe3ebd79e250aa8"
